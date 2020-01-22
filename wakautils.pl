@@ -1071,7 +1071,7 @@ sub write_array($@)
 				}
 			}
 		}
-		close FILE;
+		close FILE or
 		die "Couldn't write to file \"$file\"";
 	}
 }
